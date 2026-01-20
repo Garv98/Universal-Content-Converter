@@ -1,0 +1,468 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Light theme with soft warm tones to reduce eye strain */
+:root {
+  --background: oklch(0.96 0.01 80);
+  --foreground: oklch(0.2 0.01 260);
+  --card: oklch(0.98 0.005 80);
+  --card-foreground: oklch(0.2 0.01 260);
+  --popover: oklch(0.98 0.005 80);
+  --popover-foreground: oklch(0.2 0.01 260);
+  --primary: oklch(0.5 0.15 180);
+  --primary-foreground: oklch(0.98 0.005 80);
+  --secondary: oklch(0.88 0.01 80);
+  --secondary-foreground: oklch(0.2 0.01 260);
+  --muted: oklch(0.90 0.01 80);
+  --muted-foreground: oklch(0.5 0.01 260);
+  --accent: oklch(0.5 0.15 180);
+  --accent-foreground: oklch(0.98 0.005 80);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.98 0.005 80);
+  --border: oklch(0.82 0.01 80);
+  --input: oklch(0.94 0.01 80);
+  --ring: oklch(0.5 0.15 180);
+  --chart-1: oklch(0.5 0.15 180);
+  --chart-2: oklch(0.48 0.18 145);
+  --chart-3: oklch(0.45 0.12 220);
+  --chart-4: oklch(0.58 0.14 85);
+  --chart-5: oklch(0.50 0.2 30);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.94 0.01 80);
+  --sidebar-foreground: oklch(0.2 0.01 260);
+  --sidebar-primary: oklch(0.5 0.15 180);
+  --sidebar-primary-foreground: oklch(0.98 0.005 80);
+  --sidebar-accent: oklch(0.88 0.01 80);
+  --sidebar-accent-foreground: oklch(0.2 0.01 260);
+  --sidebar-border: oklch(0.82 0.01 80);
+  --sidebar-ring: oklch(0.5 0.15 180);
+  
+  /* Primary color RGB for reading guide gradient */
+  --primary-rgb: 114, 206, 206;
+}
+
+/* Dark academic theme with teal accent */
+.dark {
+  --background: oklch(0.13 0.01 260);
+  --foreground: oklch(0.95 0.01 260);
+  --card: oklch(0.17 0.01 260);
+  --card-foreground: oklch(0.95 0.01 260);
+  --popover: oklch(0.17 0.01 260);
+  --popover-foreground: oklch(0.95 0.01 260);
+  --primary: oklch(0.72 0.15 180);
+  --primary-foreground: oklch(0.13 0.01 260);
+  --secondary: oklch(0.22 0.01 260);
+  --secondary-foreground: oklch(0.95 0.01 260);
+  --muted: oklch(0.22 0.01 260);
+  --muted-foreground: oklch(0.65 0.01 260);
+  --accent: oklch(0.72 0.15 180);
+  --accent-foreground: oklch(0.13 0.01 260);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.95 0.01 260);
+  --border: oklch(0.28 0.01 260);
+  --input: oklch(0.22 0.01 260);
+  --ring: oklch(0.72 0.15 180);
+  --chart-1: oklch(0.72 0.15 180);
+  --chart-2: oklch(0.65 0.18 145);
+  --chart-3: oklch(0.58 0.12 220);
+  --chart-4: oklch(0.75 0.14 85);
+  --chart-5: oklch(0.6 0.2 30);
+  --sidebar: oklch(0.15 0.01 260);
+  --sidebar-foreground: oklch(0.95 0.01 260);
+  --sidebar-primary: oklch(0.72 0.15 180);
+  --sidebar-primary-foreground: oklch(0.13 0.01 260);
+  --sidebar-accent: oklch(0.22 0.01 260);
+  --sidebar-accent-foreground: oklch(0.95 0.01 260);
+  --sidebar-border: oklch(0.28 0.01 260);
+  --sidebar-ring: oklch(0.72 0.15 180);
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+  
+  /* Accessibility enhancements for cognitive disabilities */
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* High contrast focus indicators */
+  *:focus-visible {
+    outline: 3px solid hsl(var(--primary)) !important;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  
+  /* Simplified text styling for better readability */
+  .simplified-text {
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+}
+
+/* ===================================
+   GROUNDBREAKING ACCESSIBILITY FEATURES
+   =================================== */
+
+/* CSS Custom Properties for Accessibility */
+:root {
+  --udl-font-scale: 1;
+  --udl-line-height: 1.5;
+  --udl-letter-spacing: 0em;
+}
+
+/* Apply accessibility settings - scale root font size */
+html {
+  font-size: calc(16px * var(--udl-font-scale, 1));
+}
+
+/* Apply line height and letter spacing to body */
+body {
+  line-height: var(--udl-line-height, 1.5);
+  letter-spacing: var(--udl-letter-spacing, 0em);
+}
+
+/* Ensure spacing cascades to all elements */
+* {
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+/* Keep accessibility panel completely isolated from font scaling */
+.accessibility-panel-fixed {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  /* Reset all rem-based units to use 16px as base */
+  --tw-text-opacity: 1;
+}
+
+/* All children inherit the fixed base size */
+.accessibility-panel-fixed * {
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+}
+
+/* ===================================
+   DYSLEXIA-FRIENDLY MODE
+   =================================== */
+
+/* OpenDyslexic font - proven to help dyslexic readers */
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body.dyslexia-mode {
+  font-family: 'OpenDyslexic', 'Comic Sans MS', 'Trebuchet MS', sans-serif !important;
+  letter-spacing: 0.12em !important;
+  word-spacing: 0.2em !important;
+  line-height: 2 !important;
+}
+
+body.dyslexia-mode * {
+  font-family: inherit !important;
+}
+
+body.dyslexia-mode p,
+body.dyslexia-mode li,
+body.dyslexia-mode span {
+  max-width: 70ch;
+  text-align: left !important;
+}
+
+/* ===================================
+   COLOR BLINDNESS MODES
+   Using CSS filters to simulate/correct color vision
+   =================================== */
+
+/* Protanopia (red-blind) - enhance blue/yellow differentiation */
+[data-color-blind="protanopia"] #main-content {
+  filter: url('#protanopia-filter');
+}
+
+/* Deuteranopia (green-blind) - enhance blue/yellow differentiation */
+[data-color-blind="deuteranopia"] #main-content {
+  filter: url('#deuteranopia-filter');
+}
+
+/* Tritanopia (blue-blind) - enhance red/green differentiation */
+[data-color-blind="tritanopia"] #main-content {
+  filter: url('#tritanopia-filter');
+}
+
+/* ===================================
+   HIGH CONTRAST MODE
+   =================================== */
+
+body.high-contrast {
+  --background: oklch(0 0 0);
+  --foreground: oklch(1 0 0);
+  --card: oklch(0.1 0 0);
+  --card-foreground: oklch(1 0 0);
+  --primary: oklch(0.9 0.3 80);
+  --primary-foreground: oklch(0 0 0);
+  --muted: oklch(0.2 0 0);
+  --muted-foreground: oklch(0.8 0 0);
+  --border: oklch(1 0 0);
+}
+
+body.high-contrast * {
+  border-width: 2px !important;
+  font-weight: 500 !important;
+}
+
+body.high-contrast a,
+body.high-contrast button {
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
+}
+
+body.high-contrast *:focus-visible {
+  outline: 4px solid yellow !important;
+  outline-offset: 4px !important;
+}
+
+/* ===================================
+   REDUCED MOTION MODE - Gentle transitions
+   =================================== */
+
+body.reduced-motion,
+body.reduced-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.15s !important;
+  transition-timing-function: ease-in-out !important;
+  scroll-behavior: auto !important;
+}
+
+/* Remove problematic animations that can cause motion sickness */
+body.reduced-motion *:hover,
+body.reduced-motion *:focus {
+  transform: none !important;
+}
+
+body.reduced-motion .animate-pulse,
+body.reduced-motion .animate-spin,
+body.reduced-motion .animate-bounce {
+  animation: none !important;
+}
+
+/* ===================================
+   FOCUS MODE - Minimize distractions
+   =================================== */
+
+body.focus-mode header,
+body.focus-mode footer,
+body.focus-mode nav,
+body.focus-mode aside {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+body.focus-mode header:hover,
+body.focus-mode footer:hover,
+body.focus-mode nav:hover,
+body.focus-mode aside:hover {
+  opacity: 1;
+}
+
+body.focus-mode main {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--background);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+/* ===================================
+   READING GUIDE (controlled via JS)
+   =================================== */
+
+body.reading-guide {
+  cursor: crosshair;
+}
+
+/* ===================================
+   COGNITIVE ACCESSIBILITY ENHANCEMENTS
+   =================================== */
+
+/* Larger touch targets (WCAG 2.5.5 - AAA) */
+@media (pointer: coarse) {
+  button,
+  a,
+  input,
+  select,
+  textarea,
+  [role="button"],
+  [role="link"],
+  [role="tab"] {
+    min-height: 48px !important;
+    min-width: 48px !important;
+    padding: 12px !important;
+  }
+}
+
+/* Better link visibility */
+a:not([class*="button"]) {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-thickness: 3px;
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 1rem 2rem;
+  z-index: 10000;
+  border-radius: 0 0 8px 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Visible focus for all interactive elements */
+*:focus-visible {
+  outline: 3px solid var(--ring) !important;
+  outline-offset: 3px !important;
+}
+
+/* ===================================
+   PRINT ACCESSIBILITY
+   =================================== */
+
+@media print {
+  body {
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+    color: black !important;
+    background: white !important;
+  }
+  
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+  
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* ===================================
+   SCREEN READER ONLY TEXT
+   =================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ===================================
+   ANIMATION FOR LOADING STATES
+   (respects reduced-motion preference)
+   =================================== */
+
+@keyframes pulse-gentle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.loading-pulse {
+  animation: pulse-gentle 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-pulse {
+    animation: none;
+    opacity: 0.7;
+  }
+}
