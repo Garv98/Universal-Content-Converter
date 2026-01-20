@@ -177,3 +177,8 @@ logs/
 # Temporary files
 *.tmp
 *.temp
+
+data/
+evaluation/
+output/
+outputs/
