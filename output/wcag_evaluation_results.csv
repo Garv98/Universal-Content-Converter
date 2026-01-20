@@ -1,0 +1,101 @@
+content_id,content_type,raw_content,ground_truth_violations,predicted_violation,wcag_score_before,wcag_score_after,fixes_applied_count
+1,text,<img src='x.png'>,perceivable,none,0,0,0
+2,text,Click here,operable,none,0,0,0
+3,image,diagram.jpg,perceivable,none,0,0,0
+4,audio,lecture.wav,understandable,none,0,0,0
+5,text,<img src='chart.png'>,perceivable,none,0,0,0
+6,text,Read more,operable,none,0,0,0
+7,text,This content uses complex jargon and unexplained acronyms.,understandable,none,0,0,0
+8,text,<div onclick='doSomething()'>Submit</div>,operable,none,0,0,0
+9,text,<video autoplay></video>,operable,none,0,0,0
+10,image,infographic.png,perceivable,none,0,0,0
+11,text,The paradigm leverages synergistic methodologies.,understandable,none,0,0,0
+12,text,<form><input type='text'></form>,understandable,none,0,0,0
+13,text,<marquee>Breaking News</marquee>,operable,none,0,0,0
+14,text,Items highlighted in red indicate errors.,perceivable,none,0,0,0
+15,audio,podcast_episode.wav,understandable,none,0,0,0
+16,text,<a href='#'>Click here</a>,operable,none,0,0,0
+17,text,<img src='photo.jpg' alt=''>,perceivable,none,0,0,0
+18,text,<h1>Title</h1><h3>Subtitle</h3>,perceivable,none,0,0,0
+19,text,Session expires in 30 seconds.,operable,none,0,0,0
+20,text,<span onclick='openMenu()'>Menu</span>,operable,none,0,0,0
+21,image,graph_without_alt.png,perceivable,none,0,0,0
+22,text,Utilize the aforementioned framework.,understandable,none,0,0,0
+23,text,<input type='checkbox'>,understandable,none,0,0,0
+24,text,<video></video>,perceivable,none,0,0,0
+25,text,Click the green button to continue.,perceivable,none,0,0,0
+26,text,<title></title>,operable,none,0,0,0
+27,image,flowchart.jpg,perceivable,none,0,0,0
+28,text,Notwithstanding the foregoing provisions.,understandable,none,0,0,0
+29,text,<button style='outline:none'>OK</button>,operable,none,0,0,0
+30,text,<audio autoplay></audio>,operable,none,0,0,0
+31,text,This is a simple sentence.,none,none,0,0,0
+32,text,Clear instructions are provided.,none,none,0,0,0
+33,text,<h1>Main</h1><h2>Sub</h2>,none,none,0,0,0
+34,text,Users can pause the timer.,none,none,0,0,0
+35,text,Plain language improves accessibility.,none,none,0,0,0
+36,text,<img src='logo.png' alt='Company logo'>,none,none,0,0,0
+37,text,<form><label>Name</label><input></form>,none,none,0,0,0
+38,text,Navigation is consistent across pages.,none,none,0,0,0
+39,text,No flashing content is present.,none,none,0,0,0
+40,text,Content is readable and concise.,none,none,0,0,0
+41,text,<img src='icon.png'>,perceivable,none,0,0,0
+42,text,Click here to proceed.,operable,none,0,0,0
+43,text,Highly technical documentation follows.,understandable,none,0,0,0
+44,text,<video autoplay loop></video>,operable,none,0,0,0
+45,image,schematic.png,perceivable,none,0,0,0
+46,text,The methodology herein described...,understandable,none,0,0,0
+47,text,<div tabindex='-1'>Hidden</div>,operable,none,0,0,0
+48,text,Text relies on blue highlights.,perceivable,none,0,0,0
+49,text,<input placeholder='Email'>,understandable,none,0,0,0
+50,audio,training_audio.mp3,understandable,none,0,0,0
+51,text,<blink>Alert</blink>,operable,none,0,0,0
+52,text,Complex sentence structures abound herein.,understandable,none,0,0,0
+53,text,<a href='#'>More</a>,operable,none,0,0,0
+54,image,map_without_description.png,perceivable,none,0,0,0
+55,text,Auto logout will occur.,operable,none,0,0,0
+56,text,<form><input></form>,understandable,none,0,0,0
+57,text,Content lacks headings.,perceivable,none,0,0,0
+58,text,<video><track kind='captions'></video>,none,none,0,0,0
+59,text,Language is simple and clear.,none,none,0,0,0
+60,text,Users can extend the time limit.,none,none,0,0,0
+61,text,<img src='banner.png'>,perceivable,none,0,0,0
+62,text,Read more details here.,operable,none,0,0,0
+63,text,Unexplained abbreviations like QRS.,understandable,none,0,0,0
+64,text,<span onclick='go()'>Go</span>,operable,none,0,0,0
+65,image,illustration.jpg,perceivable,none,0,0,0
+66,text,The system facilitates paradigm shifts.,understandable,none,0,0,0
+67,text,<button>Submit</button>,none,none,0,0,0
+68,text,Clear labels are present.,none,none,0,0,0
+69,text,<nav>Main Menu</nav>,none,none,0,0,0
+70,text,Focus indicators are visible.,none,none,0,0,0
+71,text,<audio></audio>,perceivable,none,0,0,0
+72,text,Click the red icon.,perceivable,none,0,0,0
+73,text,Highly verbose and complex exposition.,understandable,none,0,0,0
+74,text,<div onclick='x()'></div>,operable,none,0,0,0
+75,image,chart_no_alt.png,perceivable,none,0,0,0
+76,text,Session timeout warning displayed.,operable,none,0,0,0
+77,text,<input aria-label='Name'>,none,none,0,0,0
+78,text,Simple words are used.,none,none,0,0,0
+79,text,<h1>Header</h1>,none,none,0,0,0
+80,text,Predictable navigation structure.,none,none,0,0,0
+81,text,<img src='photo.png'>,perceivable,none,0,0,0
+82,text,Click here for more info.,operable,none,0,0,0
+83,text,Overly academic prose employed.,understandable,none,0,0,0
+84,text,<video autoplay muted></video>,operable,none,0,0,0
+85,image,diagram2.png,perceivable,none,0,0,0
+86,text,Utilize synergistic paradigms.,understandable,none,0,0,0
+87,text,<input type='text'>,understandable,none,0,0,0
+88,text,Clear error messages are shown.,none,none,0,0,0
+89,text,No jargon is present.,none,none,0,0,0
+90,text,Content is accessible.,none,none,0,0,0
+91,text,<marquee>Scrolling</marquee>,operable,none,0,0,0
+92,text,Color alone indicates status.,perceivable,none,0,0,0
+93,text,Long sentences with many clauses.,understandable,none,0,0,0
+94,text,<span onclick='submit()'>Submit</span>,operable,none,0,0,0
+95,image,visual_no_alt.jpg,perceivable,none,0,0,0
+96,text,Time limit can be extended.,none,none,0,0,0
+97,text,<video><track kind='captions'></video>,none,none,0,0,0
+98,text,Plain English instructions.,none,none,0,0,0
+99,text,Accessible form with labels.,none,none,0,0,0
+100,text,Well-structured and readable content.,none,none,0,0,0

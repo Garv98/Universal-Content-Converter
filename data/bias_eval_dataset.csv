@@ -1,0 +1,110 @@
+id,text,expected_bias,expected_categories
+1,"Mankind has always explored the universe.",1,gender
+2,"The elderly are slow learners.",1,age
+3,"She is a nurse and he is an engineer.",1,gender
+4,"People with disabilities deserve equal access.",0,none
+5,"Illegal aliens are invading neighborhoods.",1,racial
+6,"The student completed the assignment.",0,none
+7,"Handicapped people suffer from limitations.",1,disability
+8,"Technology improves accessibility.",0,none
+9,"Young people are lazy these days.",1,age
+10,"The chairperson opened the meeting.",0,none
+
+11,"Firemen are brave and risk their lives.",1,gender
+12,"Old people are confused by technology.",1,age
+13,"The manager reviewed the report.",0,none
+14,"Crippled individuals need help.",1,disability
+15,"Policemen should control the area.",1,gender
+16,"Students attended the lecture.",0,none
+17,"Senior citizens are forgetful.",1,age
+18,"The assistant submitted the files.",0,none
+19,"Crazy people should be avoided.",1,disability
+20,"The software update improved performance.",0,none
+
+21,"Illegal aliens are criminals.",1,racial
+22,"The doctor explained the treatment.",0,none
+23,"Millennials are naive about work.",1,age
+24,"The application passed all tests.",0,none
+25,"Retarded people cannot learn.",1,disability
+26,"The research team published results.",0,none
+27,"She should be a secretary.",1,gender
+28,"The conference started on time.",0,none
+29,"Gangsters live in that neighborhood.",1,racial
+30,"The library is open to everyone.",0,none
+
+31,"Young people are irresponsible.",1,age
+32,"The committee approved the proposal.",0,none
+33,"Insane individuals are dangerous.",1,disability
+34,"The device supports assistive technologies.",0,none
+35,"Chairman announced the decision.",1,gender
+36,"The course material was updated.",0,none
+37,"Illegal immigrants cause problems.",1,racial
+38,"The interface is easy to use.",0,none
+39,"Old people should not use computers.",1,age
+40,"The teacher encouraged participation.",0,none
+
+41,"Handicapped students struggle academically.",1,disability
+42,"The meeting notes were shared.",0,none
+43,"He is naturally better at leadership.",1,gender
+44,"The platform improves inclusion.",0,none
+45,"Psycho behavior should be punished.",1,disability
+46,"The system passed accessibility checks.",0,none
+47,"Those communities are full of criminals.",1,racial
+48,"The website follows WCAG guidelines.",0,none
+49,"Young workers lack discipline.",1,age
+50,"The organization promotes equality.",0,none
+
+51,"Old employees resist change.",1,age
+52,"The dataset was preprocessed.",0,none
+53,"She is suited to caregiving roles.",1,gender
+54,"The dashboard displays metrics.",0,none
+55,"Mentally retarded individuals are helpless.",1,disability
+56,"The code passed all unit tests.",0,none
+57,"Immigrants are stealing jobs.",1,racial
+58,"The model was fine-tuned.",0,none
+59,"Youngsters are careless drivers.",1,age
+60,"The report was submitted on time.",0,none
+
+61,"Fireman rescued the child.",1,gender
+62,"Older people are bad with devices.",1,age
+63,"The API response was cached.",0,none
+64,"Insane behavior should be isolated.",1,disability
+65,"Chairman controls the board.",1,gender
+66,"The UI design was improved.",0,none
+67,"Illegal aliens exploit welfare.",1,racial
+68,"The class syllabus was revised.",0,none
+69,"Teenagers are reckless.",1,age
+70,"The tool supports accessibility.",0,none
+
+71,"Crippled workers reduce productivity.",1,disability
+72,"The build completed successfully.",0,none
+73,"He should lead the team.",1,gender
+74,"The system uses encryption.",0,none
+75,"Gangsters dominate that area.",1,racial
+76,"The website loads faster now.",0,none
+77,"Old users avoid technology.",1,age
+78,"The dataset contains annotations.",0,none
+79,"Psycho individuals are violent.",1,disability
+80,"The service meets compliance standards.",0,none
+
+81,"Women are better suited for care roles.",1,gender
+82,"The application supports dark mode.",0,none
+83,"Senior workers are slow.",1,age
+84,"The model accuracy improved.",0,none
+85,"Handicapped persons need supervision.",1,disability
+86,"The platform scales efficiently.",0,none
+87,"Immigrant communities are dangerous.",1,racial
+88,"The documentation is complete.",0,none
+89,"Young employees lack commitment.",1,age
+90,"The audit report was approved.",0,none
+
+91,"Men make better leaders.",1,gender
+92,"The system passed integration tests.",0,none
+93,"Mentally ill people are unstable.",1,disability
+94,"The interface follows design guidelines.",0,none
+95,"Illegal immigrants should be removed.",1,racial
+96,"The pipeline processes data.",0,none
+97,"Teenagers are irresponsible.",1,age
+98,"The service improves usability.",0,none
+99,"Crippled people burden society.",1,disability
+100,"The organization values diversity.",0,none

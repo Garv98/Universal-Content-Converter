@@ -1,0 +1,2 @@
+Accuracy,Precision,Recall,F1-Score,CategoryAccuracy,MeanIssueCountError,MeanAccessibilityScore
+0.78,1.0,0.725,0.8405797101449275,0.5125,0.45,95.8
