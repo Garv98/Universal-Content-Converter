@@ -1,0 +1,101 @@
+content_id,content_type,raw_content,ground_truth_violations
+1,text,"<img src='x.png'>",perceivable
+2,text,"Click here",operable
+3,image,"diagram.jpg",perceivable
+4,audio,"lecture.wav",understandable
+5,text,"<img src='chart.png'>",perceivable
+6,text,"Read more",operable
+7,text,"This content uses complex jargon and unexplained acronyms.",understandable
+8,text,"<div onclick='doSomething()'>Submit</div>",operable
+9,text,"<video autoplay></video>",operable
+10,image,"infographic.png",perceivable
+11,text,"The paradigm leverages synergistic methodologies.",understandable
+12,text,"<form><input type='text'></form>",understandable
+13,text,"<marquee>Breaking News</marquee>",operable
+14,text,"Items highlighted in red indicate errors.",perceivable
+15,audio,"podcast_episode.wav",understandable
+16,text,"<a href='#'>Click here</a>",operable
+17,text,"<img src='photo.jpg' alt=''>",perceivable
+18,text,"<h1>Title</h1><h3>Subtitle</h3>",perceivable
+19,text,"Session expires in 30 seconds.",operable
+20,text,"<span onclick='openMenu()'>Menu</span>",operable
+21,image,"graph_without_alt.png",perceivable
+22,text,"Utilize the aforementioned framework.",understandable
+23,text,"<input type='checkbox'>",understandable
+24,text,"<video></video>",perceivable
+25,text,"Click the green button to continue.",perceivable
+26,text,"<title></title>",operable
+27,image,"flowchart.jpg",perceivable
+28,text,"Notwithstanding the foregoing provisions.",understandable
+29,text,"<button style='outline:none'>OK</button>",operable
+30,text,"<audio autoplay></audio>",operable
+31,text,"This is a simple sentence.",none
+32,text,"Clear instructions are provided.",none
+33,text,"<h1>Main</h1><h2>Sub</h2>",none
+34,text,"Users can pause the timer.",none
+35,text,"Plain language improves accessibility.",none
+36,text,"<img src='logo.png' alt='Company logo'>",none
+37,text,"<form><label>Name</label><input></form>",none
+38,text,"Navigation is consistent across pages.",none
+39,text,"No flashing content is present.",none
+40,text,"Content is readable and concise.",none
+41,text,"<img src='icon.png'>",perceivable
+42,text,"Click here to proceed.",operable
+43,text,"Highly technical documentation follows.",understandable
+44,text,"<video autoplay loop></video>",operable
+45,image,"schematic.png",perceivable
+46,text,"The methodology herein described...",understandable
+47,text,"<div tabindex='-1'>Hidden</div>",operable
+48,text,"Text relies on blue highlights.",perceivable
+49,text,"<input placeholder='Email'>",understandable
+50,audio,"training_audio.mp3",understandable
+51,text,"<blink>Alert</blink>",operable
+52,text,"Complex sentence structures abound herein.",understandable
+53,text,"<a href='#'>More</a>",operable
+54,image,"map_without_description.png",perceivable
+55,text,"Auto logout will occur.",operable
+56,text,"<form><input></form>",understandable
+57,text,"Content lacks headings.",perceivable
+58,text,"<video><track kind='captions'></video>",none
+59,text,"Language is simple and clear.",none
+60,text,"Users can extend the time limit.",none
+61,text,"<img src='banner.png'>",perceivable
+62,text,"Read more details here.",operable
+63,text,"Unexplained abbreviations like QRS.",understandable
+64,text,"<span onclick='go()'>Go</span>",operable
+65,image,"illustration.jpg",perceivable
+66,text,"The system facilitates paradigm shifts.",understandable
+67,text,"<button>Submit</button>",none
+68,text,"Clear labels are present.",none
+69,text,"<nav>Main Menu</nav>",none
+70,text,"Focus indicators are visible.",none
+71,text,"<audio></audio>",perceivable
+72,text,"Click the red icon.",perceivable
+73,text,"Highly verbose and complex exposition.",understandable
+74,text,"<div onclick='x()'></div>",operable
+75,image,"chart_no_alt.png",perceivable
+76,text,"Session timeout warning displayed.",operable
+77,text,"<input aria-label='Name'>",none
+78,text,"Simple words are used.",none
+79,text,"<h1>Header</h1>",none
+80,text,"Predictable navigation structure.",none
+81,text,"<img src='photo.png'>",perceivable
+82,text,"Click here for more info.",operable
+83,text,"Overly academic prose employed.",understandable
+84,text,"<video autoplay muted></video>",operable
+85,image,"diagram2.png",perceivable
+86,text,"Utilize synergistic paradigms.",understandable
+87,text,"<input type='text'>",understandable
+88,text,"Clear error messages are shown.",none
+89,text,"No jargon is present.",none
+90,text,"Content is accessible.",none
+91,text,"<marquee>Scrolling</marquee>",operable
+92,text,"Color alone indicates status.",perceivable
+93,text,"Long sentences with many clauses.",understandable
+94,text,"<span onclick='submit()'>Submit</span>",operable
+95,image,"visual_no_alt.jpg",perceivable
+96,text,"Time limit can be extended.",none
+97,text,"<video><track kind='captions'></video>",none
+98,text,"Plain English instructions.",none
+99,text,"Accessible form with labels.",none
+100,text,"Well-structured and readable content.",none

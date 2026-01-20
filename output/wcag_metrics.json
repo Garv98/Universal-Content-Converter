@@ -1,0 +1,9 @@
+{
+    "precision_macro": 0.058,
+    "recall_macro": 0.2,
+    "f1_macro": 0.09,
+    "avg_wcag_score_before": 0.0,
+    "avg_wcag_score_after": 0.0,
+    "avg_improvement": 0.0,
+    "avg_fixes_applied": 0.0
+}
